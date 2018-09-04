@@ -10,7 +10,7 @@ class EmailParser
 
   def parse
     parsed_list =  []
-    arr = @email.split(",")
+    arr = emails.split(",")
     str = arr.join(" ")
     list = str.split(" ")
     list.each do |email|
