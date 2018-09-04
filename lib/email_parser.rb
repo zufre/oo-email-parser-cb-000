@@ -18,7 +18,7 @@ class EmailParser
         parsed_list.push(email)
       end
     end
-    parsed_list = list
+    parsed_list 
   end
 
 
