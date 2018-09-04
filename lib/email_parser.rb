@@ -15,11 +15,12 @@ class EmailParser
     list = str.split(" ")
     list.each do |email|
       if !list.include?(email)
-        list.push(email)
+        
+        ist.push(email)
       end
     end
     parsed_list = list
   end
-  
+
 
 end
