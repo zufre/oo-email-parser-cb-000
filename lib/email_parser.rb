@@ -10,7 +10,7 @@ class EmailParser
 
   def parse
     parsed_list =  []
-    arr = emails.split(",")
+    arr = @emails.split(",")
     str = arr.join(" ")
     list = str.split(" ")
     list.each do |email|
@@ -18,7 +18,7 @@ class EmailParser
         parsed_list.push(email)
       end
     end
-    parsed_list 
+    parsed_list
   end
 
 
