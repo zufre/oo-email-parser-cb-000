@@ -14,8 +14,8 @@ class EmailParser
     str = arr.join(" ")
     list = str.split(" ")
     list.each do |email|
-      if !list.includes?(email)
-        list.push(email)
+      if parsed_list.includes(email)
+        parsed_list.push(email)
       end
     end
     parsed_list = list
