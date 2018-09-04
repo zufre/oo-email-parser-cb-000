@@ -13,7 +13,7 @@ class EmailParser(emails)
     arr = @email.split(",")
     str = arr.join(" ")
     list = str.split(" ")
-    list.each do |email| 
+    list.each do |email|
       if !list.include?(email)
         list.push(email)
       end
@@ -21,5 +21,5 @@ class EmailParser(emails)
     parsed_list = list
   end
   
-  
+
 end
